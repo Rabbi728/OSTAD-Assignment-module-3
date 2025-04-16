@@ -9,7 +9,7 @@ pipeline {
         stage('Clone') {
             steps {
                 script {
-                    git branch: 'main', url: 'https://github.com/Rabbi728/OSTAD-Assignment-module-3.git'
+                    git url: 'https://github.com/Rabbi728/OSTAD-Assignment-module-3.git'
                 }
             }
         }
@@ -30,7 +30,7 @@ pipeline {
     }
     post {
         always {
-            echo 'Cleaning up..'
+            echo 'Cleaning up...'
         }
         success {
             echo 'Build successful'
