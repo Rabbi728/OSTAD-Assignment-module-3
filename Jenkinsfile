@@ -31,7 +31,6 @@ pipeline {
     post {
         always {
             echo 'Cleaning up...'
-            junit '**/test-*.xml'
         }
         success {
             echo 'Build successful'
