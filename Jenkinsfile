@@ -9,7 +9,7 @@ pipeline {
         stage('Clone') {
             steps {
                 script {
-                    git url: 'https://github.com/Rabbi728/OSTAD-Assignment-module-3.git'
+                    git branch: 'main', url: 'https://github.com/Rabbi728/OSTAD-Assignment-module-3.git'
                 }
             }
         }
